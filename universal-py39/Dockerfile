@@ -1,6 +1,7 @@
 # this base image is cached on codespaces.
 # see https://github.com/microsoft/vscode-dev-containers/tree/main/containers/codespaces-linux#description
-FROM mcr.microsoft.com/vscode/devcontainers/universal:1-linux
+# FROM mcr.microsoft.com/vscode/devcontainers/universal:1-linux
+FROM mcr.microsoft.com/vscode/devcontainers/universal:1.3.3-focal
 
 USER root
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
